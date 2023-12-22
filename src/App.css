@@ -1,0 +1,200 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 5% auto;
+}
+
+#tidoHeading {
+  display: flex;
+  justify-content: center;
+  color: rgb(20, 172, 139);
+}
+
+#inputFeilds-sibmit #todo-Name,
+#todo-Description,
+#todoButton {
+
+
+  margin: 0.5rem;
+}
+
+#inputFeilds-sibmit {
+  display: flex;
+
+  justify-content: center;
+}
+
+#inputFeilds-sibmit #todo-Name {
+  padding: 0.4rem;
+  width: 35%;
+  border: none;
+  border: 1px solid rgb(20, 172, 139);
+
+  color: black;
+  border-radius: 0.2em;
+}
+
+#inputFeilds-sibmit #todo-Description {
+  width: 35%;
+  padding: 0.4rem;
+  border: none;
+  border: 1px solid rgb(20, 172, 139);
+  color: black;
+  border-radius: 0.2em;
+}
+
+#inputFeilds-sibmit #todoButton {
+  width: 10%;
+  border: none;
+  background-color: rgb(20, 172, 139);
+  color: rgb(255, 255, 255);
+  border-radius: 0.4em;
+}
+
+#statusDropDown {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+
+
+}
+
+#statusDropDown .myTodo h5 {
+
+  font-weight: bold;
+}
+
+#statusDropDown .dropDown h5 {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+#statusDropDown .dropDown {
+  display: flex;
+  height: 10px;
+
+  font-weight: bold;
+}
+
+#statusDropDown .dropDown select {
+  width: 3rem;
+  height: 2rem;
+  background: rgb(255, 130, 130);
+  color: white;
+
+}
+
+#statusDropDown .dropDown select option:nth-child(1) {
+  background: rgb(255, 130, 130);
+}
+
+#statusDropDown .dropDown select option:nth-child(2) {
+  background: rgb(20, 174, 137);
+}
+
+#statusDropDown .dropDown select option:nth-child(3) {
+  background: rgb(255, 130, 130);
+}
+
+.card {
+  background-color: rgb(204, 245, 211);
+  padding: 13px;
+  margin-top: 3rem;
+}
+
+.card p select {
+  width: 7rem;
+  height: 2rem;
+  color: white;
+  margin-left: 1em;
+  background: rgb(255, 130, 130);
+}
+
+
+
+.card p select option:nth-child(2) {
+  background: rgb(255, 130, 130);
+
+  width: 7rem;
+  height: 2rem;
+  margin-left: 1em;
+}
+
+.card p select option:nth-child(1) {
+  background: rgb(20, 174, 137);
+  width: 7rem;
+  height: 2rem;
+  margin-left: 1em;
+}
+
+.card .editDelet {
+  display: flex;
+  justify-content: flex-end;
+
+
+
+}
+
+.card .editDelet button {
+
+  padding-right: 15px;
+  margin-right: 10px;
+
+
+}
+
+.card .editDelet button:nth-child(1) {
+
+
+  background-color: rgb(19, 173, 137);
+  color: white;
+  width: 5rem;
+
+}
+
+.card .editDelet button:nth-child(2) {
+
+
+  background-color: rgb(208, 94, 31);
+  color: white;
+  width: 5rem;
+
+}
+
+@media (max-width:476px) {
+  #tidoHeading {
+    display: flex;
+    justify-content: center;
+    color: red(20, 172, 139);
+
+  }
+
+  #inputFeilds-sibmit #todo-Name {
+    padding: 5px;
+    width: 15rem;
+    border: none;
+    border: 1px solid rgb(20, 172, 139);
+    color: rgb(198, 199, 199);
+    border-radius: 0.2em;
+  }
+
+  #inputFeilds-sibmit #todo-Description {
+
+    width: 15rem;
+    border: none;
+    border: 1px solid rgb(20, 172, 139);
+    color: rgb(198, 199, 199);
+    border-radius: 0.2em;
+  }
+
+  #inputFeilds-sibmit #todoButton {
+    width: 15rem;
+    border: none;
+    background-color: rgb(20, 172, 139);
+    color: rgb(255, 255, 255);
+    border-radius: 0.4em;
+  }
+
+}
