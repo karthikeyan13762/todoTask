@@ -90,6 +90,7 @@ function App() {
                 id="todo-Name"
                 value={inputName}
                 onChange={handleNameChange}
+                required
               />
               <input
                 type="text"
@@ -97,6 +98,7 @@ function App() {
                 id="todo-Description"
                 value={inputDescription}
                 onChange={handleDescriptionChange}
+                required
               />
               <button type="submit" id="todoButton">
                 {editIndex !== null ? "Update Todo" : "Add Todo"}
